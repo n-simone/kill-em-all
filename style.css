@@ -2,3 +2,8 @@ button {
     background-color:green;
     color:white;
 }
+
+canvas {
+    margin:left:auto;
+    margin:right:auto;
+}
