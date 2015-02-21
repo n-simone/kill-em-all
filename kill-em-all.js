@@ -53,6 +53,8 @@ ctx.fillText("Kill 'em All!",10,50);
 
 function startGame () {
     // UPDATE LOOP //
+    var button = document.getElementById ("myButton");
+    button.style.display = 'none';
     setInterval(function() {
         update();
         draw();
