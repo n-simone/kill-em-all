@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 function startGame () {
     alert("hello world");
 
 }
 
+=======
+>>>>>>> d9a21b22a23f94b0f24fd02b7728db896b4b929d
 // VARIABLES //
 
 var FPS = 60; // frames per second
@@ -53,9 +56,19 @@ function draw() {
     hero.draw();
 }
 
+<<<<<<< HEAD
 // UPDATE LOOP //
 setInterval(function() {
     update();
     draw();
 }, 1000/FPS);
+=======
+function startGame () {
+    // UPDATE LOOP //
+    setInterval(function() {
+        update();
+        draw();
+    }, 1000/FPS);
+}
+>>>>>>> d9a21b22a23f94b0f24fd02b7728db896b4b929d
 
