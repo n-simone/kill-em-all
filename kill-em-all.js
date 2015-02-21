@@ -48,7 +48,6 @@ function draw() {
     hero.draw();
 }
 
-// UPDATE LOOP //
 function startGame () {
     // UPDATE LOOP //
     setInterval(function() {
