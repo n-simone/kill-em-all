@@ -7,7 +7,7 @@ function startGame () {
 
 // VARIABLES //
 
-var FPS = 30; // frames per second
+var FPS = 60; // frames per second
 
 // var grav = 0; // gravity
 
