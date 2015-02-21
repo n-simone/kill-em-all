@@ -48,6 +48,9 @@ function draw() {
     hero.draw();
 }
 
+ctx.font = "30px Arial";
+ctx.fillText("Kill 'em All!",10,50);
+
 function startGame () {
     // UPDATE LOOP //
     setInterval(function() {
