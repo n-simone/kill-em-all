@@ -16,13 +16,13 @@ var FPS = 30;
 var grav = 0;
 
 var hero = {
-    x: 150,
-    y: 150,
-    w: 25,
-    h: 25,
-    dx: 2,
-    dy: 3,
-    color: "#FF0000",
+    x: 150, // horizontal position (left edge)
+    y: 150, // vertical position (top edge)
+    w: 25, // width
+    h: 25, // height
+    dx: 2, // horizontal velocity (left: -, right: +)
+    dy: 3, // vertical velocity (up: -, down: +)
+    color: "#FF0000", // color value // red
     draw: function() {
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.w, this.h);
