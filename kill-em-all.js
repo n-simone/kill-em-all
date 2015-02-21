@@ -3,11 +3,10 @@
 function startGame () {
     alert("hello world");
 
-    
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.font = "30px Arial";
-    ctx.strokeText("Hello World",10,50);
+    // var canvas = document.getElementById("myCanvas");
+    // var ctx = canvas.getContext("2d");
+    // ctx.font = "30px Arial";
+    // ctx.strokeText("Hello World",10,50);
 }
 
 var c = document.getElementById("myCanvas");
