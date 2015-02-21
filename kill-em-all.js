@@ -1,10 +1,3 @@
-// $(document).ready(function() {
-
-function startGame () {
-    alert("hello world");
-
-}
-
 // VARIABLES //
 
 var FPS = 60; // frames per second
@@ -55,18 +48,11 @@ function draw() {
     hero.draw();
 }
 
-// UPDATE LOOP //
-setInterval(function() {
-    update();
-    draw();
-}, 1000/FPS);
+function startGame () {
+    // UPDATE LOOP //
+    setInterval(function() {
+        update();
+        draw();
+    }, 1000/FPS);
+}
 
-// var d = document.getElementById("myCanvas");
-// var dtx = d.getContext("2d");
-// dtx.moveTo(0,0);
-// dtx.lineTo(200,100);
-// dtx.stroke();
-
-
-
-// });
