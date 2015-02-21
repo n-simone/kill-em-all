@@ -3,24 +3,26 @@
 function startGame () {
     alert("hello world");
 
-    // var canvas = document.getElementById("myCanvas");
-    // var ctx = canvas.getContext("2d");
-    // ctx.font = "30px Arial";
-    // ctx.strokeText("Hello World",10,50);
 }
 
 // VARIABLES //
 
+// frames per second
 var FPS = 30;
 
 var grav = 0;
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
 var hero = {
     x: 150,
     y: 150,
     w: 25,
     h: 25,
+  //speed on the x-axis
     dx: 2,
+  //speed on the y-axis
     dy: 3,
     color: "#FF0000",
     draw: function() {
@@ -28,9 +30,6 @@ var hero = {
         ctx.fillRect(this.x, this.y, this.w, this.h);
     }
 }
-
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
 
 var CANVAS_HEIGHT = c.height;
 var CANVAS_WIDTH = c.width;
