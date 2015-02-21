@@ -13,7 +13,7 @@ function startGame () {
 
 var FPS = 30;
 
-var grav = 0;
+// var grav = 0;
 
 var hero = {
     x: 150, // horizontal position (left edge)
@@ -37,9 +37,12 @@ var CANVAS_WIDTH = c.width;
 
 // UPDATE //
 function update() {
+    // update hero position
     hero.x += hero.dx;
     hero.y += hero.dy;
-    hero.dy += grav;
+    // hero.dy += grav;
+
+    // reverse direction when edges are hit
     if ( (hero.x > CANVAS_WIDTH - hero.w) || (hero.x < 0) )
     {
         hero.dx = -hero.dx;
@@ -52,7 +55,7 @@ function update() {
 
 // DRAW //
 function draw() {
-    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT); // clear canvas
     hero.draw();
 }
 
