@@ -11,6 +11,19 @@ var ctx = c.getContext("2d");
 var CANVAS_HEIGHT = c.height;
 var CANVAS_WIDTH = c.width;
 
+
+var leftBlock = {
+    x: 0, // horizontal position (based on left edge)
+    y: 300, // vertical position (based on top edge)
+    w: 150, // width
+    h: 200, // height
+    color: "green", // color value // red
+    draw: function() {
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, this.y, this.w, this.h);
+    }
+}
+
 var hero = {
     x: 150, // horizontal position (based on left edge)
     y: 150, // vertical position (based on top edge)
@@ -46,7 +59,8 @@ function update() {
 // DRAW //
 function draw() {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT); // clear canvas
-    hero.draw();
+  hero.draw();
+  leftBlock.draw();
 }
 
 ctx.font = "30px Arial";
