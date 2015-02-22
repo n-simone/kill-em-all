@@ -8,7 +8,6 @@ var FPS = 60; // frames per second
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-  
 var CANVAS_HEIGHT = c.height;
 var CANVAS_WIDTH = c.width;
 
