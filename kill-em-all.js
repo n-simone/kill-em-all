@@ -1,12 +1,14 @@
 // VARIABLES //
-
+//  http://blog.lessmilk.com/make-html5-games-with-phaser-1/
+//  http://docs.phaser.io/
+//  http://html5hub.com/how-to-make-a-sidescroller-game-with-html5/
 var FPS = 60; // frames per second
 
 // var grav = 0; // gravity
 
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-
+  
 var CANVAS_HEIGHT = c.height;
 var CANVAS_WIDTH = c.width;
 
@@ -53,11 +55,10 @@ ctx.fillText("Kill 'em All!",10,50);
 
 function startGame () {
     // UPDATE LOOP //
-    var button = document.getElementById ("myButton");
-    button.style.display = 'none';
+  $("#myButton").css("display", "none");
     setInterval(function() {
         update();
         draw();
     }, 1000/FPS);
 }
-
+  
