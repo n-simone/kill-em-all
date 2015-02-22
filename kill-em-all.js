@@ -54,13 +54,20 @@ function update() {
     {
         hero.dy = -hero.dy;
     }
+    // reverse direction when hero hits leftBlock
+    if ( (hero.x < leftBlock.w ) && (hero.y > CANVAS_HEIGHT - leftBlock.h) ) {
+        hero.dx = -hero.dx;
+    }
+    // if ( (hero.y > CANVAS_HEIGHT - leftBlock.h ) && (hero.x < leftBlock.w) ) {
+    //     hero.dy = -hero.dy;
+    // }
 }
 
 // DRAW //
 function draw() {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT); // clear canvas
-  hero.draw();
-  leftBlock.draw();
+    hero.draw();
+    leftBlock.draw();
 }
 
 ctx.font = "30px Arial";
@@ -68,10 +75,9 @@ ctx.fillText("Kill 'em All!",10,50);
 
 function startGame () {
     // UPDATE LOOP //
-  $("#myButton").css("display", "none");
+    $("#myButton").css("display", "none");
     setInterval(function() {
         update();
         draw();
     }, 1000/FPS);
 }
-  
